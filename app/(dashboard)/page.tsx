@@ -74,7 +74,7 @@ async function CollectionList() {
     },
   });
 
-  if (collections.length === 0) {
+  if (noteCollections.length === 0) {
     return (
       <div className="flex flex-col gap-5">
         <Alert>
@@ -93,9 +93,9 @@ async function CollectionList() {
     <>
       <CreateCollectionBtn />
       <div className="flex flex-col gap-3 mt-4 ">
-        {collections.map((collection) => (
+        {/* {collections.map((collection) => (
           <CollectionCard key={collection.id} collection={collection} />
-        ))}
+        ))} */}
 
         {noteCollections.map((noteCollection) => (
           <NoteCollectionCard

@@ -123,12 +123,8 @@ const NoteCollectionCard: FC<NoteCollectionCardProps> = ({ collection }) => {
               {/* <Progress value={progress} className="rounded-none" /> */}
               <div className="p-4 gap-3 flex flex-col">
                 {notes.map((note) => (
-                  <div className="space-y-3">
-                    <NoteCard
-                      key={note.id}
-                      note={note}
-                      noteCollection={collection}
-                    />
+                  <div className="space-y-3" key={note.id}>
+                    <NoteCard note={note} noteCollection={collection} />
                   </div>
                 ))}
               </div>
