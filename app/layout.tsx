@@ -12,7 +12,7 @@ import { Toaster } from "@/components/ui/toaster";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "RemindApp",
+  title: "NoteApp",
   description: "Website for creating reminders or todo lists",
 };
 
